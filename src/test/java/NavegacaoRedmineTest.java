@@ -54,6 +54,11 @@ public class NavegacaoRedmineTest {
         WebElement noticias = driver.findElement(By.cssSelector("#content > div.splitcontentleft > div > h3"));
         assertNotNull(noticias);
         
+        // Exemplo CLICK
+        WebElement menuAjuda = driver.findElement(By.xpath("//*[@id=\"top-menu\"]/ul/li[3]/a"));
+        menuAjuda.click();
+        
+        
         // Fecha o navegador
         //driver.quit();
     }
