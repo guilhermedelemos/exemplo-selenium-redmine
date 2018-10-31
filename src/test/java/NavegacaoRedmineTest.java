@@ -58,9 +58,8 @@ public class NavegacaoRedmineTest {
         WebElement menuAjuda = driver.findElement(By.xpath("//*[@id=\"top-menu\"]/ul/li[3]/a"));
         menuAjuda.click();
         
-        
         // Fecha o navegador
-        //driver.quit();
+        driver.quit();
     }
     
 }
