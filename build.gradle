@@ -8,8 +8,8 @@ mainClassName = 'App'
 dependencies {
     compile 'com.google.guava:guava:23.0'
     testCompile 'junit:junit:4.12'
-    testCompile 'io.github.bonigarcia:webdrivermanager:1.6.1' 
-    testCompile 'org.seleniumhq.selenium:selenium-java:3.3.1'
+    testCompile 'io.github.bonigarcia:webdrivermanager:3.6.2' 
+    testCompile 'org.seleniumhq.selenium:selenium-java:3.141.59'
 }
 
 repositories {

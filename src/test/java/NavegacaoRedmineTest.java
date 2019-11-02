@@ -1,29 +1,22 @@
-import org.junit.After;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
-import org.junit.BeforeClass;
-import org.junit.Before;
 import org.openqa.selenium.By;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
 import io.github.bonigarcia.wdm.ChromeDriverManager;
-import java.io.File;
-import java.io.IOException;
-import com.google.common.io.Files;
-import java.util.concurrent.ThreadLocalRandom;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class NavegacaoRedmineTest {
     
     @Test
     public void navegacaoTest() {
         // Carrega o driver do navegador
-        ChromeDriverManager.getInstance().setup(); 
+        WebDriverManager.chromedriver().setup();
         
         // Define opções do navegador
         ChromeOptions chromeOptions = new ChromeOptions();

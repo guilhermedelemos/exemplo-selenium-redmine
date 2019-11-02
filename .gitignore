@@ -30,3 +30,8 @@ nbproject/
 # Gralde
 .gradle/
 
+# VSCode
+.classpath
+.project
+.settings
+
