@@ -1,7 +1,4 @@
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +7,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class NavegacaoRedmineTest {
     
@@ -29,7 +29,7 @@ public class NavegacaoRedmineTest {
         
         // Acessa a página desejada
         driver.get("http://demo.redmine.org");
-        
+
         // Exemplo XPATH
         WebElement titulo = driver.findElement(By.xpath("//*[@id=\"content\"]/h2"));
         assertEquals("Página inicial", titulo.getText());
